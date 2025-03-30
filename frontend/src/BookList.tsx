@@ -5,7 +5,7 @@ function BookList()
     const [books, setBooks] = useState<Book[]>([]);
     useEffect(() => {
         const fetchBooks = async () => {
-            const response = await fetch('http://localhost:5105/book');
+            const response = await fetch('https://localhost:5000/book');
             const data = await response.json();
             setBooks(data);
         };

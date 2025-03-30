@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emmaj\\OneDrive\\Desktop\\Bookstore\\backend\\Bookstore.API\\BookstoreProject.API.csproj": {}
+    "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\BookstoreProject.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emmaj\\OneDrive\\Desktop\\Bookstore\\backend\\Bookstore.API\\BookstoreProject.API.csproj": {
+    "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\BookstoreProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emmaj\\OneDrive\\Desktop\\Bookstore\\backend\\Bookstore.API\\BookstoreProject.API.csproj",
+        "projectUniqueName": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\BookstoreProject.API.csproj",
         "projectName": "BookstoreProject.API",
-        "projectPath": "C:\\Users\\emmaj\\OneDrive\\Desktop\\Bookstore\\backend\\Bookstore.API\\BookstoreProject.API.csproj",
+        "projectPath": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\BookstoreProject.API.csproj",
         "packagesPath": "C:\\Users\\emmaj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emmaj\\OneDrive\\Desktop\\Bookstore\\backend\\Bookstore.API\\obj\\",
+        "outputPath": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

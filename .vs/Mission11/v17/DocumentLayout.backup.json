@@ -1,0 +1,131 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|c:\\users\\emmaj\\onedrive\\documents\\github\\mission11\\backend\\bookstore.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|solutionrelative:backend\\bookstore.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|c:\\users\\emmaj\\onedrive\\documents\\github\\mission11\\backend\\bookstore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|solutionrelative:backend\\bookstore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|c:\\users\\emmaj\\onedrive\\documents\\github\\mission11\\backend\\bookstore.api\\data\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|solutionrelative:backend\\bookstore.api\\data\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|c:\\users\\emmaj\\onedrive\\documents\\github\\mission11\\backend\\bookstore.api\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|solutionrelative:backend\\bookstore.api\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|c:\\users\\emmaj\\onedrive\\documents\\github\\mission11\\backend\\bookstore.api\\bookstoreproject.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|solutionrelative:backend\\bookstore.api\\bookstoreproject.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|c:\\users\\emmaj\\onedrive\\documents\\github\\mission11\\backend\\bookstore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{980858E7-F55B-4C98-9BF7-D49E1304EA38}|backend\\Bookstore.API\\BookstoreProject.API.csproj|solutionrelative:backend\\bookstore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookstoreProject.API.http",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\BookstoreProject.API.http",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\BookstoreProject.API.http",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\BookstoreProject.API.http",
+              "RelativeToolTip": "backend\\Bookstore.API\\BookstoreProject.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-30T00:58:58.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Controllers\\BookController.cs",
+              "RelativeToolTip": "backend\\Bookstore.API\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:31:06.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\Program.cs",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Program.cs",
+              "RelativeToolTip": "backend\\Bookstore.API\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:27:39.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Data\\BookDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\Data\\BookDbContext.cs",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Data\\BookDbContext.cs",
+              "RelativeToolTip": "backend\\Bookstore.API\\Data\\BookDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:23:18.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\Data\\Book.cs",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Data\\Book.cs",
+              "RelativeToolTip": "backend\\Bookstore.API\\Data\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:17:41.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\appsettings.json",
+              "RelativeToolTip": "backend\\Bookstore.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-30T00:16:03.108Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

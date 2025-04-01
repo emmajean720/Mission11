@@ -41,19 +41,6 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "backend\\Bookstore.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "backend\\Bookstore.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-30T01:55:30.21Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
@@ -64,6 +51,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "backend\\Bookstore.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\emmaj\\OneDrive\\Documents\\GitHub\\Mission11\\backend\\Bookstore.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "backend\\Bookstore.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-30T01:55:30.21Z"
             },
             {
               "$type": "Document",

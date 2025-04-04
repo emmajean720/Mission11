@@ -1,6 +1,8 @@
-﻿using BookstoreProject.API.Data;
+﻿// Updated BookController.cs to support category filtering
+using BookstoreProject.API.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace BookstoreProject.API.Controllers
 {
@@ -11,13 +13,17 @@ namespace BookstoreProject.API.Controllers
         private BookDbContext _bookcontext;
         public BookController(BookDbContext temp) => _bookcontext = temp;
 
-        public IEnumerable<Book> Get()
+        [HttpGet]
+        public IEnumerable<Book> Get([FromQuery] string? category)
         {
-            var something = _bookcontext.Books.ToList();
-            return something;
+            var books = _bookcontext.Books.AsQueryable();
 
+            if (!string.IsNullOrEmpty(category))
+            {
+                books = books.Where(b => b.Category == category);
+            }
+
+            return books.ToList();
         }
-
-
     }
 }

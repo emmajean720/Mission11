@@ -1,0 +1,29 @@
+# OS/System files
+.DS_Store
+Thumbs.db
+
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dbmdl
+*.log
+
+# React / Node
+node_modules/
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Test snapshots
+__snapshots__/

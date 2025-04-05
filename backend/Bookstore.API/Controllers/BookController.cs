@@ -1,8 +1,6 @@
-﻿// Updated BookController.cs to support category filtering
-using BookstoreProject.API.Data;
+﻿using BookstoreProject.API.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 
 namespace BookstoreProject.API.Controllers
 {
@@ -17,13 +15,45 @@ namespace BookstoreProject.API.Controllers
         public IEnumerable<Book> Get([FromQuery] string? category)
         {
             var books = _bookcontext.Books.AsQueryable();
-
             if (!string.IsNullOrEmpty(category))
             {
                 books = books.Where(b => b.Category == category);
             }
-
             return books.ToList();
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] Book book)
+        {
+            _bookcontext.Books.Add(book);
+            _bookcontext.SaveChanges();
+            return CreatedAtAction(nameof(Get), new { id = book.BookId }, book);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, [FromBody] Book updatedBook)
+        {
+            var existing = _bookcontext.Books.FirstOrDefault(b => b.BookId == id);
+            if (existing == null) return NotFound();
+
+            existing.Title = updatedBook.Title;
+            existing.Author = updatedBook.Author;
+            existing.Category = updatedBook.Category;
+            existing.Price = updatedBook.Price;
+
+            _bookcontext.SaveChanges();
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var book = _bookcontext.Books.FirstOrDefault(b => b.BookId == id);
+            if (book == null) return NotFound();
+
+            _bookcontext.Books.Remove(book);
+            _bookcontext.SaveChanges();
+            return NoContent();
         }
     }
 }

@@ -27,13 +27,13 @@ namespace BookstoreProject.API.Controllers
         {
             _bookcontext.Books.Add(book);
             _bookcontext.SaveChanges();
-            return CreatedAtAction(nameof(Get), new { id = book.BookId }, book);
+            return CreatedAtAction(nameof(Get), new { id = book.BookID }, book);
         }
 
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Book updatedBook)
         {
-            var existing = _bookcontext.Books.FirstOrDefault(b => b.BookId == id);
+            var existing = _bookcontext.Books.FirstOrDefault(b => b.BookID == id);
             if (existing == null) return NotFound();
 
             existing.Title = updatedBook.Title;
@@ -48,7 +48,7 @@ namespace BookstoreProject.API.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var book = _bookcontext.Books.FirstOrDefault(b => b.BookId == id);
+            var book = _bookcontext.Books.FirstOrDefault(b => b.BookID == id);
             if (book == null) return NotFound();
 
             _bookcontext.Books.Remove(book);

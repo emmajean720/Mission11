@@ -4,7 +4,7 @@ import { Book } from './types/Book';
 function AdminBooks() {
   const [books, setBooks] = useState<Book[]>([]);
   const [formData, setFormData] = useState<Partial<Book>>({});
-  const [editingBookId, setEditingBookId] = useState<number | null>(null);
+  const [editingBookID, setEditingBookID] = useState<number | null>(null);
 
   const fetchBooks = async () => {
     const res = await fetch('https://localhost:5000/book');
@@ -22,29 +22,50 @@ function AdminBooks() {
   };
 
   const handleSubmit = async () => {
-    const method = editingBookId ? 'PUT' : 'POST';
-    const url = editingBookId
-      ? `https://localhost:5000/book/${editingBookId}`
+    const method = editingBookID ? 'PUT' : 'POST';
+    const url = editingBookID
+      ? `https://localhost:5000/book/${editingBookID}`
       : 'https://localhost:5000/book';
 
-    await fetch(url, {
-      method,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-    setFormData({});
-    setEditingBookId(null);
-    fetchBooks();
+    const { bookID, ...bookData } = formData;
+
+    console.log("Submitting book:", bookData);
+
+    try {
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(bookData),
+      });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error('Backend response:', errorText);
+        alert('Failed to save book.');
+        return;
+      }
+
+      setFormData({});
+      setEditingBookID(null);
+      fetchBooks();
+    } catch (err) {
+      console.error('Error submitting book:', err);
+    }
   };
 
   const handleDelete = async (id: number) => {
-    await fetch(`https://localhost:5000/book/${id}`, { method: 'DELETE' });
-    fetchBooks();
+    const res = await fetch(`https://localhost:5000/book/${id}`, { method: 'DELETE' });
+
+    if (res.ok) {
+      setTimeout(fetchBooks, 200);
+    } else {
+      alert('Failed to delete book.');
+    }
   };
 
   const handleEdit = (book: Book) => {
     setFormData(book);
-    setEditingBookId(book.bookID);
+    setEditingBookID(book.bookID);
   };
 
   return (
@@ -56,8 +77,11 @@ function AdminBooks() {
         <input className="form-control mb-2" name="author" placeholder="Author" value={formData.author || ''} onChange={handleInputChange} />
         <input className="form-control mb-2" name="category" placeholder="Category" value={formData.category || ''} onChange={handleInputChange} />
         <input className="form-control mb-2" name="price" placeholder="Price" type="number" value={formData.price || ''} onChange={handleInputChange} />
+        <input className="form-control mb-2" name="isbn" placeholder="ISBN" value={formData.isbn || ''} onChange={handleInputChange} />
+        <input className="form-control mb-2" name="publisher" placeholder="Publisher" value={formData.publisher || ''} onChange={handleInputChange} />
+        <input className="form-control mb-2" name="classification" placeholder="Classification" value={formData.classification || ''} onChange={handleInputChange} />
         <button className="btn btn-primary" onClick={handleSubmit}>
-          {editingBookId ? 'Update' : 'Add'} Book
+          {editingBookID ? 'Update' : 'Add'} Book
         </button>
       </div>
 

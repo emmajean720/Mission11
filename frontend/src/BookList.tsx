@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Book } from './types/Book';
+import baseUrl from './baseUrl';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function BookList() {
@@ -10,7 +11,7 @@ function BookList() {
     const [sortConfig, setSortConfig] = useState<{ key: keyof Book; direction: 'asc' | 'desc' } | null>(null);
     const [category, setCategory] = useState<string>(() => sessionStorage.getItem('category') || '');
     const [selectedCategory, setSelectedCategory] = useState<string>(() => sessionStorage.getItem('category') || '');
-    const [cart, setCart] = useState<{ [bookId: number]: { book: Book; quantity: number } }>(() => {
+    const [cart, setCart] = useState<{ [bookID: number]: { book: Book; quantity: number } }>(() => {
         const stored = sessionStorage.getItem('cart');
         return stored ? JSON.parse(stored) : {};
     });
@@ -28,7 +29,7 @@ function BookList() {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const url = category ? `https://localhost:5000/book?category=${encodeURIComponent(category)}` : 'https://localhost:5000/book';
+                const url = category ? `${baseUrl}/book?category=${encodeURIComponent(category)}` : `${baseUrl}/book`;
                 const response = await fetch(url);
                 const data = await response.json();
                 setBooks(data);

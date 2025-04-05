@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Book } from './types/Book';
+import baseUrl from './baseUrl';
 
 function AdminBooks() {
   const [books, setBooks] = useState<Book[]>([]);
@@ -7,7 +8,7 @@ function AdminBooks() {
   const [editingBookID, setEditingBookID] = useState<number | null>(null);
 
   const fetchBooks = async () => {
-    const res = await fetch('https://localhost:5000/book');
+    const res = await fetch(`${baseUrl}/book`);
     const data = await res.json();
     setBooks(data);
   };
@@ -24,8 +25,8 @@ function AdminBooks() {
   const handleSubmit = async () => {
     const method = editingBookID ? 'PUT' : 'POST';
     const url = editingBookID
-      ? `https://localhost:5000/book/${editingBookID}`
-      : 'https://localhost:5000/book';
+      ? `${baseUrl}/book/${editingBookID}`
+      : `${baseUrl}/book`;
 
     const { bookID, ...bookData } = formData;
 
@@ -54,7 +55,7 @@ function AdminBooks() {
   };
 
   const handleDelete = async (id: number) => {
-    const res = await fetch(`https://localhost:5000/book/${id}`, { method: 'DELETE' });
+    const res = await fetch(`${baseUrl}/book/${id}`, { method: 'DELETE' });
 
     if (res.ok) {
       setTimeout(fetchBooks, 200);

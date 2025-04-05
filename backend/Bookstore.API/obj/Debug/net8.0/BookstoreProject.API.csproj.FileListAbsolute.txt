@@ -69,3 +69,4 @@ C:\Users\emmaj\OneDrive\Documents\GitHub\Mission11\backend\Bookstore.API\obj\Deb
 C:\Users\emmaj\OneDrive\Documents\GitHub\Mission11\backend\Bookstore.API\obj\Debug\net8.0\BookstoreProject.API.pdb
 C:\Users\emmaj\OneDrive\Documents\GitHub\Mission11\backend\Bookstore.API\obj\Debug\net8.0\BookstoreProject.API.genruntimeconfig.cache
 C:\Users\emmaj\OneDrive\Documents\GitHub\Mission11\backend\Bookstore.API\obj\Debug\net8.0\ref\BookstoreProject.API.dll
+C:\Users\emmaj\OneDrive\Documents\GitHub\Mission11\backend\Bookstore.API\bin\Debug\net8.0\Bookstore.sqlite
